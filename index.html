@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pink.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- Live Style Switcher -->
+    <link rel="stylesheet" class="alternate-style" title="pink" href="pink.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="blue" href="blue.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="orange.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="yellow.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="green.css" disabled>
+    <link rel="stylesheet" href="styleSwitcher.css">
+
+
+
+</head>
+
+<body>
+
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader End -->
+
+            <!-- Home Section -->
+            <section class="home section active" id="home">
+                <div class="container">
+                    <div class="intro">
+                        <img src="me.JPG" alt="profile" class="shadow-dark">
+                        <h1>Saurabh Pandey</h1>
+                        <p>I'm a Web Devloper</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Section End -->
+
+
+
+    <!-- Live Style Switcher -->
+    <div class="style-switcher">
+        <div class="toggle-switcher">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul>
+            <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+            <li><a href="javascript:void(0);" title="blue" style="background-color: #2196F3;" onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b07;" onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+            <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+        </ul>
+        <h4>Body Skin</h4>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            Light
+        </label>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+            Dark
+        </label>
+    </div>
+    <!-- Live Style Switcher End -->
+
+
+    <!-- Live Style Switcher js -->
+    <script src="switcher.js"></script>
+
+</body>
+
+</html>
